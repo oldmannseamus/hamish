@@ -1,1 +1,39 @@
-@import './layout';
+@import './variables';
+
+// Stylesheet from gatsby-starter-default.
+@import './default';
+
+// @todo break these down into subsheets.
+body {
+  background-color: $site-secondary;
+}
+
+.content-wrapper {
+  margin: 0 auto;
+  max-width: $desktop-max;
+}
+
+header {
+  margin-bottom: 1.45rem;
+  background-color: $site-primary;
+
+  .content-wrapper {
+    padding: 1.45rem 1.0875rem;
+  }
+
+  .site-title {
+    margin: 0;
+
+    &,
+    a {
+      color: $off-white;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      color: white;
+    }
+  }
+}
+

@@ -6,26 +6,11 @@ type Props = {
 }
 
 const Header = ({ siteTitle }: Props) => (
-  <header
-    style={{
-      background: `#0b474a`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
+  <header>
+    <div className="content-wrapper">
+      <h1 className="site-title" >
         <Link
           to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
         >
           {siteTitle}
         </Link>
